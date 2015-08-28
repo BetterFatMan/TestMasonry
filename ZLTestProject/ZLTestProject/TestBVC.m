@@ -110,14 +110,16 @@
         
         [_image mas_makeConstraints:^(MASConstraintMaker *make) {
 //            make.top.equalTo(self.contentView).offset(2);
-//            make.left.equalTo(self.contentView).offset(15);
+            make.left.equalTo(self.contentView).offset(15);
             
-            make.top.left.bottom.equalTo(self.contentView).insets(UIEdgeInsetsMake(2, 15, 2, 0));
-            make.width.equalTo(@40);
+//            make.top.left.bottom.equalTo(self.contentView).insets(UIEdgeInsetsMake(2, 15, 2, 0));
+            make.centerY.equalTo(self.contentView.mas_centerY);
+            make.width.equalTo(self.contentView).with.multipliedBy(0.2);
+            make.height.equalTo(self.contentView).with.multipliedBy(0.85);
 //            make.height.equalTo(@40);
         }];
         [_name mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_image.mas_top).offset(-1);
+            make.top.equalTo(self.contentView).offset(1);
             make.left.equalTo(_image.mas_right).offset(8);
                 //            make.width.equalTo(@40);
             make.height.equalTo(@[_title, _detail]);
