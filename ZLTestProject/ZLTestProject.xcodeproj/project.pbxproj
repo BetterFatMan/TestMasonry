@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2515DA6F1B8EADA600263C38 /* TestBVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2515DA6E1B8EADA600263C38 /* TestBVC.m */; };
 		252E62241B8DA64600BE7954 /* TestAVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 252E62231B8DA64600BE7954 /* TestAVC.m */; };
 		25C98F011B845B5E00972143 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C98F001B845B5E00972143 /* main.m */; };
 		25C98F041B845B5E00972143 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25C98F031B845B5E00972143 /* AppDelegate.m */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2515DA6D1B8EADA600263C38 /* TestBVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBVC.h; sourceTree = "<group>"; };
+		2515DA6E1B8EADA600263C38 /* TestBVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBVC.m; sourceTree = "<group>"; };
 		252E62221B8DA64600BE7954 /* TestAVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestAVC.h; sourceTree = "<group>"; };
 		252E62231B8DA64600BE7954 /* TestAVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestAVC.m; sourceTree = "<group>"; };
 		252E62251B8DA66B00BE7954 /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
@@ -128,6 +131,8 @@
 				25C98F061B845B5E00972143 /* ViewController.m */,
 				252E62221B8DA64600BE7954 /* TestAVC.h */,
 				252E62231B8DA64600BE7954 /* TestAVC.m */,
+				2515DA6D1B8EADA600263C38 /* TestBVC.h */,
+				2515DA6E1B8EADA600263C38 /* TestBVC.m */,
 				25C98F081B845B5E00972143 /* Main.storyboard */,
 				25C98F0B1B845B5E00972143 /* Images.xcassets */,
 				25C98F0D1B845B5E00972143 /* LaunchScreen.xib */,
@@ -294,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2515DA6F1B8EADA600263C38 /* TestBVC.m in Sources */,
 				25C98F451B84739F00972143 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				25C98F431B84739F00972143 /* MASViewConstraint.m in Sources */,
 				25C98F3E1B84739F00972143 /* MASCompositeConstraint.m in Sources */,

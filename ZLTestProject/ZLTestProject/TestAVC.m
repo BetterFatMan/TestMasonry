@@ -8,6 +8,7 @@
 
 #import "TestAVC.h"
 #import "Header.h"
+#import "TestBVC.h"
 
 @interface TestAVC ()<UITableViewDataSource, UITableViewDelegate>
 {
@@ -40,11 +41,21 @@
         make.right.equalTo(self.view).offset(0);
         make.bottom.equalTo(self.view.bottom).offset(0);
     }];
+    
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.backgroundColor = [UIColor clearColor];
+    [button setTitle:@"TestB" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+    button.frame = CGRectMake(0, 20, 50, 44);
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:button];
+    [button addTarget:self action:@selector(ggoNextVC) forControlEvents:UIControlEventTouchUpInside];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)ggoNextVC
+{
+    TestBVC *ttestvc = [TestBVC new];
+    [self.navigationController pushViewController:ttestvc animated:YES];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
